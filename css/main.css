@@ -120,6 +120,34 @@ header {
   z-index: 100;
 }
 
+li {
+  list-style: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 43px;
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+}
+
+.card-stacks li {
+  background: rgba(255, 255, 255, 0.24) !important;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.project-stacks li {
+  display: inline;
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
+  background: transparent;
+  color: #fff;
+  transition: 350ms;
+  cursor: pointer;
+}
+
 .overlay li a {
   text-decoration: none;
   font-size: 32px;
@@ -135,6 +163,7 @@ header {
 .overlay li:nth-child(3) {
   margin-top: 40px;
 }
+
 /* mobile-menu end */
 
 #logo {
@@ -333,24 +362,6 @@ main {
   right: 0;
 }
 
-li {
-  list-style: none;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 43px;
-  text-align: center;
-  color: #fff;
-  padding: 5px;
-}
-
-.card-stacks li {
-  background: rgba(255, 255, 255, 0.24) !important;
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-}
-
 .gtime {
   background-image: url('../media/png/gtime.png');
 }
@@ -372,16 +383,6 @@ li {
   flex-wrap: wrap;
   grid-gap: 15px;
   padding: 20px 0;
-}
-
-.project-stacks li {
-  display: inline;
-  border: 1px solid #8993a4;
-  padding: 10px 12px;
-  background: transparent;
-  color: #fff;
-  transition: 350ms;
-  cursor: pointer;
 }
 
 .project-stacks li:hover {
@@ -517,7 +518,8 @@ textarea {
   align-items: center;
   justify-content: space-around;
   padding: 5vh;
-  filter: invert(67%) sepia(46%) saturate(986%) hue-rotate(179deg)
+  filter:
+    invert(67%) sepia(46%) saturate(986%) hue-rotate(179deg)
     brightness(92%) contrast(82%);
 }
 
