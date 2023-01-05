@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&family=Inter:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&family=Inter:wght@400;700&display=swap');
 
 * {
   padding: 0;
@@ -8,6 +8,16 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f9;
+  overflow-x: hidden;
+}
+
+body.active {
+  overflow-y: hidden;
 }
 
 a {
@@ -27,19 +37,115 @@ header {
   color: white;
 }
 
-#desktop-nav, #desktop-nav ul {
+#desktop-nav,
+#desktop-nav ul {
   display: none;
 }
 
+/* mobile-menu start */
+.hamburger {
+  display: block;
+  z-index: 100;
+  height: 24px;
+  width: 24px;
+  position: relative;
+  outline: none;
+  border: 0;
+  background: transparent;
+  transition: all 0.5s;
+  margin-top: 7px;
+}
+
+.ham-top,
+.ham-mid,
+.ham-bottom {
+  width: 24px;
+  border-radius: 10px;
+  height: 3px;
+  position: absolute;
+  transform: rotate(0);
+  transition: all 0.5s;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+
+.ham-mid {
+  transform: translateY(7px);
+}
+
+.ham-bottom {
+  transform: translateY(14px);
+}
+
+.initiate {
+  transform: rotate(90deg);
+  margin-top: 0;
+}
+
+.initiate .ham-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+  background-color: #fff;
+}
+
+.initiate .ham-mid {
+  display: none;
+}
+
+.initiate .ham-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  background-color: #fff;
+}
+
+.list-none {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #3c3a39;
+  backdrop-filter: blur(1rem);
+  padding-top: 106px;
+  padding-left: 28px;
+  align-self: flex-end;
+  z-index: 100;
+}
+
+.overlay li a {
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #fff;
+}
+
+.overlay li:nth-child(2) {
+  margin-top: 40px;
+}
+
+.overlay li:nth-child(3) {
+  margin-top: 40px;
+}
+/* mobile-menu end */
+
 #logo {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
 }
 
-.menu-bars {
+/* .menu-bars {
   background: transparent;
   border: none;
   outline: none;
@@ -49,7 +155,7 @@ header {
   width: 18px;
   height: 12px;
   color: white;
-}
+} */
 
 main {
   display: flex;
@@ -79,7 +185,7 @@ main {
 }
 
 .card h2 {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -90,7 +196,7 @@ main {
 .intro-greet,
 #about-me h2 {
   color: #ff6b00;
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
@@ -99,7 +205,7 @@ main {
 }
 
 .intro-me {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -109,7 +215,7 @@ main {
 }
 
 .intro-text {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -153,7 +259,7 @@ main {
 }
 
 #projects h2 {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
@@ -194,7 +300,7 @@ main {
 
 .description,
 .white-description {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -229,7 +335,7 @@ main {
 
 li {
   list-style: none;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -246,19 +352,19 @@ li {
 }
 
 .gtime {
-  background-image: url("../media/png/gtime.png");
+  background-image: url('../media/png/gtime.png');
 }
 
 .weather {
-  background-image: url("../media/png/weather.png");
+  background-image: url('../media/png/weather.png');
 }
 
 .conference {
-  background-image: url("../media/png/conference.png");
+  background-image: url('../media/png/conference.png');
 }
 
 .katchy {
-  background-image: url("../media/png/katchy.png");
+  background-image: url('../media/png/katchy.png');
 }
 
 .project-stacks {
@@ -293,7 +399,7 @@ li {
 }
 
 .about-me-text {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -308,7 +414,7 @@ li {
   justify-content: center;
   padding: 12px;
   background: #ff6b00;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -339,7 +445,7 @@ li {
 }
 
 .list-title {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -347,15 +453,15 @@ li {
 }
 
 .languages {
-  list-style: inside url("../media/svg/rectangle.svg");
+  list-style: inside url('../media/svg/rectangle.svg');
 }
 
 .frameworks {
-  list-style: inside url("../media/svg/square.svg");
+  list-style: inside url('../media/svg/square.svg');
 }
 
 .skills {
-  list-style: inside url("../media/svg/circle.svg");
+  list-style: inside url('../media/svg/circle.svg');
 }
 
 #contact {
@@ -363,7 +469,7 @@ li {
 }
 
 #contact h2 {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -392,7 +498,7 @@ textarea {
 
 input,
 textarea {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -411,12 +517,19 @@ textarea {
   align-items: center;
   justify-content: space-around;
   padding: 5vh;
-  filter:
-    invert(67%) sepia(46%) saturate(986%) hue-rotate(179deg)
+  filter: invert(67%) sepia(46%) saturate(986%) hue-rotate(179deg)
     brightness(92%) contrast(82%);
 }
 
 @media all and (min-width: 720px) {
+  #hamburger-menu {
+    display: none;
+  }
+
+  .overlay {
+    display: none;
+  }
+
   .top-social {
     flex-direction: column;
     position: absolute;
@@ -454,7 +567,7 @@ textarea {
   }
 
   .nav-link {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
