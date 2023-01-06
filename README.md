@@ -26,7 +26,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="Trials-Portfolio"></a>
+# 📖 [Trials-Portfolio] <a name="Trials-Portfolio"></a>
 
 **[Trials-Portfolio]** is s Portfolio Project. I have created it initially with Mobile First approach. I have created it with HTML CSS . In CSS I used mainly FlexBox and Grid for layout to make it responsive.
 
@@ -37,9 +37,9 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">HTML</a></li>
-    <li><a href="https://reactjs.org/">CSS</a></li>
-    <li><a href="https://reactjs.org/">JavaScript</a></li>
+    <li><a href="https://www.tutorialspoint.com/html/index.htm">HTML</a></li>
+    <li><a href="https://css-tricks.com/">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
   </ul>
 </details>
 
@@ -118,9 +118,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project, please visit the main page ofthis repo and give the project a ⭐️ !
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,9 +126,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+I would like to thank all microverse senior code reviewers for the guidnace offered during this training.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

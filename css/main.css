@@ -174,18 +174,6 @@ li {
   line-height: 24px;
 }
 
-/* .menu-bars {
-  background: transparent;
-  border: none;
-  outline: none;
-}
-
-.menu-bars i {
-  width: 18px;
-  height: 12px;
-  color: white;
-} */
-
 main {
   display: flex;
   flex-direction: column;
@@ -518,8 +506,7 @@ textarea {
   align-items: center;
   justify-content: space-around;
   padding: 5vh;
-  filter:
-    invert(67%) sepia(46%) saturate(986%) hue-rotate(179deg)
+  filter: invert(67%) sepia(46%) saturate(986%) hue-rotate(179deg)
     brightness(92%) contrast(82%);
 }
 
